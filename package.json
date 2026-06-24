@@ -1,5 +1,5 @@
 {
-  "name": "fsmkit",
+  "name": "@billdaddy/fsmkit",
   "version": "0.1.0",
   "description": "Lightweight zero-dependency finite state machine with full TypeScript support. Simple alternative to xstate/javascript-state-machine.",
   "keywords": [

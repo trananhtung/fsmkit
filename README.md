@@ -4,8 +4,8 @@
 
 Lightweight zero-dependency finite state machine with full TypeScript support. Simple alternative to `xstate` and the abandoned `javascript-state-machine`.
 
-[![npm](https://img.shields.io/npm/v/fsmkit)](https://www.npmjs.com/package/fsmkit)
-[![npm downloads](https://img.shields.io/npm/dw/fsmkit)](https://www.npmjs.com/package/fsmkit)
+[![npm](https://img.shields.io/npm/v/@billdaddy/fsmkit)](https://www.npmjs.com/package/@billdaddy/fsmkit)
+[![npm downloads](https://img.shields.io/npm/dw/@billdaddy/fsmkit)](https://www.npmjs.com/package/@billdaddy/fsmkit)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 ## Why fsmkit?
@@ -21,13 +21,13 @@ Inspired by Python's [`transitions`](https://github.com/pytransitions/transition
 ## Install
 
 ```bash
-npm install fsmkit
+npm install @billdaddy/fsmkit
 ```
 
 ## Quick start
 
 ```ts
-import { createMachine } from "fsmkit";
+import { createMachine } from "@billdaddy/fsmkit";
 
 type State = "red" | "green" | "yellow";
 type Event = "GO" | "SLOW" | "STOP";
@@ -164,7 +164,7 @@ machine.reachableStates(); // Set<State> reachable from initial
 ## Error handling
 
 ```ts
-import { InvalidTransitionError, GuardRejectedError } from "fsmkit";
+import { InvalidTransitionError, GuardRejectedError } from "@billdaddy/fsmkit";
 
 try {
   await machine.send("INVALID");
